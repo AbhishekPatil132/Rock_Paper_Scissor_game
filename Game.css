@@ -1,0 +1,162 @@
+.header{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.header h2{
+    text-align: center;
+}
+
+.display{
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.computer img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 20vw;
+    height: 30vh;
+    animation: img1 3s ease-in-out infinite;
+}
+
+@keyframes img1{
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(5%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.computer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.vs p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.me img{
+    margin-bottom: 1.5rem;
+    width: 20vw;
+    height: 30vh; 
+    animation: img2 3s ease-in-out infinite;
+}
+
+@keyframes img2{
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(-5%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.options{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options img{
+    width: 20vw;
+    height: 20vh;
+}
+
+.rock{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paper{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scissor{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rock-img{
+    padding: 7%;
+    border: 2px solid black;
+    border-radius: 50%;
+   
+}
+
+#paper-img{
+    padding: 8%;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+
+#scissor-img{
+    padding: 9%;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+
+
+#scissor-img img:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+#paper-img img:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+#rock-img img:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of the page">
+    <title>Page Title</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Game.css">
+    
+  </head>
+  <body>
+      <!-- header design -->
+
+      <div class="header" id="header">
+         <h2 id="Text">Let it be <span class="Text"></span></h2>
+      </div>
+
+      <!-- Display design -->
+      
+      <div class="display" id="display">
+          <div class="computer">
+             <img id="comp-img" src="computer.jpg"
+             <p>Computer</p>
+          </div>
+
+          <div class="vs">
+            <p>Vs</p>
+          </div>
+
+          <div class="me">
+            <img id="me-img" src="me.jpg"
+            <p>Me</p>
+          </div>
+      </div>
+
+      <div class="options">
+          <div class="rock">
+            <div id="rock-img">
+                <img src="rock.png" onclick="fun_rock()">
+            </div>
+             
+             <p>ROCK</p>
+          </div>
+
+          <div class="paper">
+             <div id="paper-img">
+                <img src="paper.png" onclick="fun_paper()">
+             </div>
+             <p>PAPER</p>
+          </div>
+
+          <div class="scissor">
+             <div id="scissor-img">
+                <img src="scissors.png" onclick="fun_scissor()">
+             </div>
+             <p>SCISSOR</p>
+          </div>
+      </div>
+
+      <!-- Typed js -->
+      <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+      <script src="Game.js"></script>
+  </body>
+</html>
