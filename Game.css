@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+.header span{
+    font-style: italic;
+}
+
 .display{
     padding: 2%;
     display: flex;
@@ -159,4 +163,35 @@
     overflow: hidden;
     transition: 0.2s ease;
     transform: scale(1.05);
+}
+
+.results{
+    margin-top: 2em;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comp-wins,.me-wins{
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comp-wins h3,p{
+    text-align: center;
+}
+
+.me-wins h3,p{
+    text-align: center;
+}
+
+#winning-me,
+#winning-comp{
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(118, 194, 42);
 }

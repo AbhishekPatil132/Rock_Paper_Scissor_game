@@ -1,5 +1,7 @@
 
 let choices = ['rock', 'paper', 'scissor'];
+let my_count = 0; 
+let comp_count= 0;
 
 function fun_rock() {
     const num = Math.floor(Math.random() * 3);
@@ -19,10 +21,14 @@ function fun_rock() {
 
     let result = Result(compChoice , myChoice);
     if( result == 'Win'){
+        my_count+=1;
+        document.getElementById('my-count').innerHTML=my_count;
         document.getElementById('Text').innerText = "Congratulations !! You won ";
     }
 
     else if( result == 'Lost'){
+        comp_count+=1;
+        document.getElementById('comp-count').innerHTML=comp_count;
         document.getElementById('Text').innerText = "Oops !! You lost";
     }
 
@@ -30,6 +36,21 @@ function fun_rock() {
         document.getElementById('Text').innerText = "Match draw !!";
     }
 
+    //  winner-text
+if(my_count > comp_count){
+    document.getElementById('winning-me').innerHTML="In winning zone";
+    document.getElementById('winning-comp').innerHTML  = "";
+}
+
+else if(my_count < comp_count){
+    document.getElementById('winning-comp').innerHTML="In winning zone";
+    document.getElementById('winning-me').innerHTML  = "";
+}
+
+else if(my_count==comp_count && my_count>0 && comp_count>0){
+    document.getElementById('winning-me').innerHTML="In winning zone";
+    document.getElementById('winning-comp').innerHTML="In winning zone";
+}
 
 }
 
@@ -52,17 +73,38 @@ function fun_paper() {
 
     let result = Result(compChoice , myChoice);
     if( result == 'Win'){
+        my_count+=1;
+        document.getElementById('my-count').innerHTML=my_count;
         document.getElementById('Text').innerHTML = "Congratulations !! You won ";
     }
 
     else if( result == 'Lost'){
+        comp_count+=1;
+        document.getElementById('comp-count').innerHTML=comp_count;
         document.getElementById('Text').innerText = "Oops !! You lost ";
     }
 
     else{
         document.getElementById('Text').innerText = "Match drawn !!  ";
     }
+
+    //  winner-text
+if(my_count > comp_count){
+    document.getElementById('winning-me').innerHTML="In winning zone";
+    document.getElementById('winning-comp').innerHTML = "";
 }
+
+else if(my_count < comp_count){
+    document.getElementById('winning-comp').innerHTML="In winning zone";
+    document.getElementById('winning-me').innerHTML  = "";
+}
+
+else if(my_count==comp_count && my_count>0 && comp_count>0){
+    document.getElementById('winning-me').innerHTML="In winning zone";
+    document.getElementById('winning-comp').innerHTML="In winning zone";
+}
+}
+
 
 function fun_scissor() {
     const num = Math.floor(Math.random() * 3);
@@ -83,10 +125,14 @@ function fun_scissor() {
 
     let result = Result(compChoice , myChoice);
     if( result == 'Win'){
-        document.getElementById('Text').innerText = " !! You won ";
+        my_count+=1;
+        document.getElementById('my-count').innerHTML=my_count;
+        document.getElementById('Text').innerText = " Congratulations!! You won ";
     }
 
     else if( result == 'Lost'){
+        comp_count+=1;
+        document.getElementById('comp-count').innerHTML=comp_count;
         document.getElementById('Text').innerText = "Oops !! You lost ";
      
     }
@@ -94,6 +140,22 @@ function fun_scissor() {
     else{
         document.getElementById('Text').innerText = "Match draw !!";
     }
+
+    //  winner-text
+if(my_count > comp_count){
+    document.getElementById('winning-me').innerHTML="In winning zone";
+    document.getElementById('winning-comp').innerHTML  = "";
+}
+
+else if(my_count < comp_count){
+    document.getElementById('winning-comp').innerHTML="In winning zone";
+    document.getElementById('winning-me').innerHTML = "";
+}
+
+else if(my_count==comp_count && my_count>0 && comp_count>0){
+    document.getElementById('winning-me').innerHTML="In winning zone";
+    document.getElementById('winning-comp').innerHTML="In winning zone";
+}
 }
 
 
